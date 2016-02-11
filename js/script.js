@@ -1,8 +1,9 @@
 var start = function(){
-  var name = getInfo();
-  String(name)
+  var name
   //Check For Answers
   var checkAns = setInterval(function(){ 
+    name = getInfo();
+    String(name)
     if(name==""){
       document.getElementById('response').innerHTML = "What is your name?";
     }
