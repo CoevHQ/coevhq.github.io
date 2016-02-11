@@ -8,4 +8,5 @@ var start = function(){
 var getInfo = function(thing){
   var info = document.getElementById('in').value;
   thing = info
+  return thing;
 }
