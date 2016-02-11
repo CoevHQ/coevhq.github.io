@@ -1,6 +1,6 @@
 var start = function(){
   var name = ""
-  document.getElementById('response').innerHTML ="<samp>" + "<p class='text-muted'>*You wake up in a strange mystical place and a tall thin man stands in front of you*</p><br>'What is your name?'" + "</samp>";
+  document.getElementById('response').innerHTML ="<samp>" + "<p class='text-muted'>*You wake up in a strange mystical place and a tall thin man stands in front of you*</p>'What is your name?'" + "</samp>";
   //Check For Answers
   var checkAns = setInterval(function(){ 
     if(name==""){
