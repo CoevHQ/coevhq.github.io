@@ -6,8 +6,7 @@ var getCoins = function(){
     var x = document.getElementById('coins').innerHTML
     document.getElementById('coins').innerHTML = ""
     parseFloat(x)
-    var inc = 1
-    x = x + inc
+    x = ++x
     console.log(x)
     document.getElementById('coins').innerHTML = x
 }
