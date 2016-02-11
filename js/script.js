@@ -8,5 +8,6 @@ var getCoins = function(){
     parseFloat(x)
     var inc = 1
     x = x + inc
+    console.log(x)
     document.getElementById('coins').innerHTML = x
 }
