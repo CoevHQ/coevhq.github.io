@@ -5,8 +5,6 @@ var start = function(){
   document.getElementById('submitin').onclick = getInfo(name)
   document.getElementById('response').innerHTML = "<samp>" + "Hello " + name + " and Welcome to Rifthalen <br> You have been summoned here by the God Queen." + "</samp>";
     }
-  }, 500);
-}
 var getInfo = function(thing){
   var info = document.getElementById('in').value;
   thing = info
