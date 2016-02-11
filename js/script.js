@@ -4,6 +4,7 @@ var start = function(){
     }
 var getCoins = function(){
     var x = document.getElementById('coins').innerHTML
+    document.getElementById('coins').innerHTML = ""
     Number(x)
     var inc = 1
     Number(inc)
