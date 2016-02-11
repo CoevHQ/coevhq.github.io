@@ -4,8 +4,7 @@ var start = function(){
   //Check For Answers
   var checkAns = setInterval(function(){ 
     if(name==""){
-      document.getElementById('submitin').onclick = getInfo()
-      name = getInfo();
+      name = document.getElementById('submitin').onclick = getInfo()
       String(name)
     }
     else{
