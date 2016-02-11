@@ -11,7 +11,7 @@ var start = function(){
       document.getElementById('response').innerHTML = "<samp>" + "Hello " + name + " and Welcome to Rifthalen <br> You have been summoned here by the God Queen." + "</samp>";
       clearInterval(checkAns);
     }
-  }, 2000);
+  }, 400);
 
   // innerHTML.getElementById
 }
