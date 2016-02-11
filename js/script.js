@@ -2,16 +2,16 @@ var start = function(){
   var name = ""
   //Check For Answers
   var checkAns = setInterval(function(){ 
-    name = getInfo();
-    String(name)
     if(name==""){
+      name = getInfo();
+      String(name)
       document.getElementById('response').innerHTML = "What is your name?";
     }
     else{
       document.getElementById('response').innerHTML = "Hello " + name + " I am Jesus.";
       clearInterval(checkAns);
     }
-  }, 500);
+  }, 2000);
 
   // innerHTML.getElementById
 }
