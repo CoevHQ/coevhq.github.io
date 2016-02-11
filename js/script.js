@@ -1,5 +1,5 @@
 var start = function(){
-  var name
+  var name = ""
   //Check For Answers
   var checkAns = setInterval(function(){ 
     name = getInfo();
