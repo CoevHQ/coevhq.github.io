@@ -5,6 +5,6 @@ var start = function(){
   // innerHTML.getElementById
 }
 var getInfo = function(){
-  var info = getElementbyId('in').value;
+  var info = document.getElementById('in').value;
   return info
 }
