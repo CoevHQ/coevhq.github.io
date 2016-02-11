@@ -14,7 +14,7 @@ var getCoins = function(){
     document.getElementById('choice3').setAttribute('disabled', true);
     document.getElementById('choice3').value = 'Resting';
      setTimeout(function(){
-        button.value = oldValue;
-        button.removeAttribute('disabled');
+        document.getElementById('choice3').value = oldValue;
+        document.getElementById('choice3').removeAttribute('disabled');
     }, 3000)
 }
