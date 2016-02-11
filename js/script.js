@@ -10,7 +10,7 @@ var start = function(){
       document.getElementById('response').innerHTML = "Hello " + name + " I am Jesus.";
       clearInterval(checkAns);
     }
-  }, 3000);
+  }, 1000);
 
   // innerHTML.getElementById
 }
