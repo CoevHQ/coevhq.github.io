@@ -2,7 +2,7 @@ var start = function(){
   var name = getInfo();
   String(name)
   //Check For Answers
-  setInterval(checkAns(){ 
+  var checkAns = setInterval(function(){ 
     if(name==""){
       document.getElementById('response').innerHTML = "What is your name?";
     }
