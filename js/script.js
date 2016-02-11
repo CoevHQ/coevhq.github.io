@@ -9,5 +9,5 @@ var getCoins = function(addit){
      inc += addit
     }
     x += inc
-    document.getElementById('coins').innerHTML = (0+x)
+    document.getElementById('coins').innerHTML = x
 }
