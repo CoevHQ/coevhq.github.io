@@ -5,6 +5,7 @@ var start = function(){
   var checkAns = setInterval(function(){ 
     if(name==""){
       name = document.getElementById('submitin').onclick = getInfo()
+      //lol
       String(name)
     }
     else{
