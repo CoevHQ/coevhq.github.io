@@ -1,7 +1,7 @@
 var start = function(){
-  document.getElementById('response') = "What is your name?";
+  document.getElementById('response').innerHTML = "What is your name?";
   var name = getInfo();
-  document.getElementById('response') = "Hello " + name + " I am Jesus."
+  document.getElementById('response').innerHTML = "Hello " + name + " I am Jesus."
   // innerHTML.getElementById
 }
 var getInfo = function(){
