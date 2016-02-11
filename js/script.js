@@ -9,4 +9,12 @@ var getCoins = function(){
     x = ++x
     console.log(x)
     document.getElementById('coins').innerHTML = x
+    var oldValue = document.getElementById('choice3').value;
+
+    document.getElementById('choice3').setAttribute('disabled', true);
+    document.getElementById('choice3').value = 'Resting';
+     setTimeout(function(){
+        button.value = oldValue;
+        button.removeAttribute('disabled');
+    }, 3000)
 }
