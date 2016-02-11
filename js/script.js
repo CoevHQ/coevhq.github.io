@@ -7,6 +7,6 @@ var getCoins = function(){
     Number(x)
     var inc = 1
     Number(inc)
-    x += inc
+    x = x + inc
     document.getElementById('coins').innerHTML = x
 }
