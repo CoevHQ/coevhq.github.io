@@ -9,12 +9,12 @@ var getCoins = function(){
     x = ++x
     console.log(x)
     document.getElementById('coins').innerHTML = x
-    var oldValue = document.getElementById('choice3').value;
+    var oldValue = document.getElementById('choice3').innerHTML;
 
     document.getElementById('choice3').setAttribute('disabled', true);
-    document.getElementById('choice3').value = 'Resting';
+    document.getElementById('choice3').innerHTML = 'Resting';
      setTimeout(function(){
-        document.getElementById('choice3').value = oldValue;
+        document.getElementById('choice3').innerHTML = oldValue;
         document.getElementById('choice3').removeAttribute('disabled');
     }, 3000)
 }
