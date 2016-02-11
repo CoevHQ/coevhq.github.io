@@ -9,9 +9,9 @@ var start = function(){
     }
     else{
       document.getElementById('response').innerHTML = "Hello " + name + " I am Jesus.";
-
+      clearInterval(checkAns);
     }
-  }, 1000);
+  }, 500);
 
   // innerHTML.getElementById
 }
