@@ -6,7 +6,7 @@ var getCoins = function(){
     var x = document.getElementById('coins').innerHTML
     document.getElementById('coins').innerHTML = ""
     parseFloat(x)
-    x = ++x
+     x = x+(Math.random()*10)
     console.log(x)
     document.getElementById('coins').innerHTML = x
     var oldValue = document.getElementById('choice3').innerHTML;
