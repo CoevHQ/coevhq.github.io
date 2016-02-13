@@ -4,9 +4,10 @@ var start = function(){
     }
 var getCoins = function(){
     var x = document.getElementById('coins').innerHTML
+    var y = Math.random()
     Number(x)
-    x = x+(Math.random()*10)
-    parseInt(x)
+    parseInt(y)
+    x = x+(y*10)
     console.log(x)
     document.getElementById('coins').innerHTML = x
     var oldValue = document.getElementById('choice3').innerHTML;
