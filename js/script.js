@@ -7,7 +7,6 @@ var getCoins = function(){
     var add = (Math.floor((Math.random()*10)+1))
     current = Number(current)
     add = Number(add)
-    document.getElementById('coins').innerHTML = current + add
     var oldValue = document.getElementById('choice3').innerHTML;
 
     document.getElementById('choice3').setAttribute('disabled', true);
@@ -15,5 +14,6 @@ var getCoins = function(){
      setTimeout(function(){
         document.getElementById('choice3').innerHTML = oldValue;
         document.getElementById('choice3').removeAttribute('disabled');
+        document.getElementById('coins').innerHTML = current + add
     }, 3000)
 }
