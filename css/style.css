@@ -4,6 +4,7 @@
 .navbar-default .navbar-brand {
   font-family: Homenaje;
   font-weight: 600;
+  font-size: 1.2em;
   letter-spacing: 2px;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
