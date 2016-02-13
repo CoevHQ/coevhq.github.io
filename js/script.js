@@ -16,6 +16,6 @@ var getCoins = function(){
         document.getElementById('choice3').innerHTML = oldValue;
         document.getElementById('choice3').removeAttribute('disabled');
         document.getElementById('coins').innerHTML = final
-        document.getElementById('response').innerHTML = "<samp>You searched for scrap and now you have <b>" + final "</b> pieces of scrap.</samp>"
+        document.getElementById('response').innerHTML = "<samp>You searched for scrap and now you have <b>"+final+"</b> pieces of scrap.</samp>"
     }, 3000)
 }
