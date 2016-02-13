@@ -11,7 +11,7 @@ var getCoins = function(){
     var oldValue = document.getElementById('choice3').innerHTML;
 
     document.getElementById('choice3').setAttribute('disabled', true);
-    document.getElementById('choice3').innerHTML = 'Resting';
+    document.getElementById('choice3').innerHTML = 'Searching';
      setTimeout(function(){
         document.getElementById('choice3').innerHTML = oldValue;
         document.getElementById('choice3').removeAttribute('disabled');
