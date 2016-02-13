@@ -7,9 +7,8 @@ var getCoins = function(){
     var y = (Math.floor((Math.random()*10)+1))
     Number(y)
     Number(x)
-    x = x+y
     console.log(x)
-    document.getElementById('coins').innerHTML = x
+    document.getElementById('coins').innerHTML = parseInt(x+y)
     var oldValue = document.getElementById('choice3').innerHTML;
 
     document.getElementById('choice3').setAttribute('disabled', true);
