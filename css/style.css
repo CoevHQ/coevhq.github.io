@@ -13,3 +13,6 @@
     -ms-user-select: none;       /* IE/Edge */
     user-select: none;
 }
+.row {
+  padding-top: 1em;
+}
