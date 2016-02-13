@@ -1,7 +1,5 @@
-# COM SOURCE
+# Ridge
 ###PSHS '19 3RD QTR JS Project Source
-So yeah, feel free to fork, download and edit to fit your crap. Have fun everyone :)
+Purely JavaScript Zombie Survival Text-based Game
 
-[DOWNLOAD](https://github.com/CoevHQ/comsource/archive/master.zip)
-
-[USE]( https://coevhq.github.io )
+[DOWNLOAD](https://github.com/CoevHQ/comsource/archive/master.zip) | [USE]( https://coevhq.github.io )
