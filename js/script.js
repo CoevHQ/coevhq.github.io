@@ -4,7 +4,6 @@ var start = function(){
     }
 var getCoins = function(){
     var x = document.getElementById('coins').innerHTML
-    document.getElementById('coins').innerHTML = ""
     Number(x)
     x = x+(Math.random()*10)
     parseInt(x)
