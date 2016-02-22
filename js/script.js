@@ -42,11 +42,9 @@ var cutWood = function(){
 }, 2000)
 }
 var gameTime = function() {
-    var current = document.getElementById('time').innerHTML
-    current = Number(current)
-    var final
-    final = Number(final)
       setInterval(function(){
-        current = current + 1
-      }, 300000);
+        var time = document.getElementById('time').innerHTML
+        time = Number(time)
+        document.getElementById('time').innerHTML = ++time
+      }, 4000);
 }
