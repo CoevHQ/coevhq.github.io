@@ -35,3 +35,12 @@ var cutWood = function(){
         document.getElementById('response').innerHTML = "<samp>You cut wood and now you have <b>"+final+"</b> logs of wood.</samp>"
 }, 2000)
 }
+var gameTime = function() {
+    var current = document.getElementById('time').innerHTML
+    current = Number(current)
+    var final
+    final = Number(final)
+      setInterval(function(){
+        current = current + 1
+      }, 300000);
+}
