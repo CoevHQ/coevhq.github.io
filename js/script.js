@@ -40,11 +40,27 @@ var cutWood = function(){
         document.getElementById('time').innerHTML = ++time
         document.getElementById('response').innerHTML = "<samp>You cut wood and now you have <b>"+final+"</b> logs of wood.</samp>"
 }, 2000)
+var rak = 0.02
+var armor = 0
 }
 var gameTime = function() {
       setInterval(function(){
         var time = document.getElementById('time').innerHTML
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
+        var ran = (Math.floor((Math.random()*10)+1))
+        var lost = (Math.floor((Math.random()*10)+1)) - armor
+          if (ran<rak){
+            document.getElementById('response').innerHTML = "<samp>Oh no a zombie attacked. -</samp>"+lost+" health"
+            health = health - lost
+          }
+        ran = (Math.floor((Math.random()*10)+1))
+          if (ran<6) {
+            document.getElementById('response').innerHTML = "<samp>You found an energy bar</samp>"
+            if(health>6){
+              health = 10
+            }
+            health = health+4
+          }
       }, 20000);
 }
