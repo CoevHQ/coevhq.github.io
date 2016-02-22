@@ -16,6 +16,9 @@ var getCoins = function(){
         document.getElementById('choice3').innerHTML = oldValue;
         document.getElementById('choice3').removeAttribute('disabled');
         document.getElementById('coins').innerHTML = final
+        var time = document.getElementById('time').innerHTML
+        time = Number(time)
+        document.getElementById('time').innerHTML = ++time
         document.getElementById('response').innerHTML = "<samp>You searched for scrap and now you have <b>"+final+"</b> pieces of scrap.</samp>"
     }, 2000) }
 var cutWood = function(){
