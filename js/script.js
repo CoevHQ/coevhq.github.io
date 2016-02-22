@@ -33,5 +33,5 @@ var cutWood = function(){
         document.getElementById('choice3').removeAttribute('disabled');
         document.getElementById('coins').innerHTML = final
         document.getElementById('response').innerHTML = "<samp>You cut wood and now you have <b>"+final+"</b> logs of wood.</samp>"
-{
+}, 2000)
 }
