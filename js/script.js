@@ -26,11 +26,11 @@ var cutWood = function(){
     add = Number(add)
     final = current + add
     var oldValue = document.getElementById('choice1').innherHTML
-    document.getElementById('choice3').setAttribute('disabled', true);
-    document.getElementById('choice3').innerHTML = 'Cutting';
+    document.getElementById('choice1').setAttribute('disabled', true);
+    document.getElementById('choice1').innerHTML = 'Cutting';
      setTimeout(function(){
-        document.getElementById('choice3').innerHTML = oldValue;
-        document.getElementById('choice3').removeAttribute('disabled');
+        document.getElementById('choice1').innerHTML = oldValue;
+        document.getElementById('choice1').removeAttribute('disabled');
         document.getElementById('coins').innerHTML = final
         document.getElementById('response').innerHTML = "<samp>You cut wood and now you have <b>"+final+"</b> logs of wood.</samp>"
 }, 2000)
