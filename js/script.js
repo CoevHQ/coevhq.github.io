@@ -20,7 +20,7 @@ var getCoins = function(){
     }, 2000)
 var cutWood = function(){
     var current = document.getElementById('wood').innerHTML
-    var add = (Math.floor((Math.random*()*10)+1))
+    var add = (Math.floor((Math.random()*10)+1))
     var final = 0
     current = Number(current)
     add = Number(add)
