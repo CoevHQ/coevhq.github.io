@@ -17,7 +17,7 @@ var getCoins = function(){
         document.getElementById('choice3').removeAttribute('disabled');
         document.getElementById('coins').innerHTML = final
         document.getElementById('response').innerHTML = "<samp>You searched for scrap and now you have <b>"+final+"</b> pieces of scrap.</samp>"
-    }, 2000)
+    }, 2000) }
 var cutWood = function(){
     var current = document.getElementById('wood').innerHTML
     var add = (Math.floor((Math.random()*10)+1))
