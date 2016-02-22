@@ -25,7 +25,7 @@ var cutWood = function(){
     current = Number(current)
     add = Number(add)
     final = current + add
-    var oldValue = document.getElementById('choice1').innherHTML
+    var oldValue = document.getElementById('choice1').innerHTML
     document.getElementById('choice1').setAttribute('disabled', true);
     document.getElementById('choice1').innerHTML = 'Cutting';
      setTimeout(function(){
