@@ -46,5 +46,5 @@ var gameTime = function() {
         var time = document.getElementById('time').innerHTML
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
-      }, 4000);
+      }, 20000);
 }
