@@ -31,7 +31,7 @@ var cutWood = function(){
      setTimeout(function(){
         document.getElementById('choice1').innerHTML = oldValue;
         document.getElementById('choice1').removeAttribute('disabled');
-        document.getElementById('coins').innerHTML = final
+        document.getElementById('wood').innerHTML = final
         document.getElementById('response').innerHTML = "<samp>You cut wood and now you have <b>"+final+"</b> logs of wood.</samp>"
 }, 2000)
 }
