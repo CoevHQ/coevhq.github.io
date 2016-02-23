@@ -1,9 +1,6 @@
 var start = function(){
   document.getElementById('response').innerHTML ="<samp>" + "<p class='text-muted'>*You walk by a small old town.*<p>*You see a sign: <b>'Welcome to Ridge--'</b> the rest has rusted off*</p></p>" + "</samp>";
     }
-var rak = 0.02
-var armor = 0
-var ran = (Math.floor((Math.random()*10)+1))
 var getCoins = function(){
     var current = document.getElementById('coins').innerHTML
     var add = (Math.floor((Math.random()*10)+1))
