@@ -1,3 +1,8 @@
+//GLOBAL VARIABLES - PLAYER STATS
+var armor = 0
+var health = 10
+var sps=0;var wps=0; var fps=0;
+//GLOBAL VARIABLES - END PLAYER STATS
 var start = function(){
   document.getElementById('response').innerHTML ="<samp>" + "<p class='text-muted'>*You walk by a small old town.*<p>*You see a sign: <b>'Welcome to Ridge--'</b> the rest has rusted off*</p></p>" + "</samp>";
     }
