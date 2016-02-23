@@ -68,6 +68,37 @@ var cutWood = function(){
           }
 }, 2000)
 }
+var getFood = function() {
+  var current = document.getElementById('food').innerHTML
+    var add = (Math.floor((Math.random()*10)+1))
+    var final = 0
+    current = Number(current)
+    add = Number(add)
+    final = current + add
+    var oldValue = document.getElementById('choice2').innerHTML;
+
+    document.getElementById('choice2').setAttribute('disabled', true);
+    document.getElementById('choice2').innerHTML = 'Hunting';
+     setTimeout(function(){
+        document.getElementById('choice2').innerHTML = oldValue;
+        document.getElementById('choice2').removeAttribute('disabled');
+        document.getElementById('food').innerHTML = final
+        var time = document.getElementById('time').innerHTML
+        time = Number(time)
+        document.getElementById('time').innerHTML = ++time
+        document.getElementById('response').innerHTML = "<samp>You hunted for food and now you have <b>"+final+"</b> pieces of meat.</samp>"
+          if (ran<rak){
+            document.getElementById('response').innerHTML = "<samp>Oh no a zombie attacked. -</samp>"+lost+" health"
+            health = health - lost
+          }
+        ran = (Math.floor((Math.random()*10)+1))
+          if (ran<6) {
+            document.getElementById('response').innerHTML = "<samp>You found an energy bar</samp>"
+            if(health>6){
+              health = 10
+            }
+            health = health+4
+}
 var gameTime = function() {
       setInterval(function(){
         var time = document.getElementById('time').innerHTML
