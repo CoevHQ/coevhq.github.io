@@ -9,6 +9,7 @@ var getCoins = function(){
     add = Number(add)
     final = current + add
     var oldValue = document.getElementById('choice3').innerHTML;
+
     document.getElementById('choice3').setAttribute('disabled', true);
     document.getElementById('choice3').innerHTML = 'Searching';
      setTimeout(function(){
@@ -39,26 +40,6 @@ var cutWood = function(){
         document.getElementById('time').innerHTML = ++time
         document.getElementById('response').innerHTML = "<samp>You cut wood and now you have <b>"+final+"</b> logs of wood.</samp>"
 }, 2000)
-}
-var getFood = function() {
-  var current = document.getElementById('food').innerHTML
-    var add = (Math.floor((Math.random()*10)+1))
-    var final = 0
-    current = Number(current)
-    add = Number(add)
-    final = current + add
-    var oldValue = document.getElementById('choice2').innerHTML;
-
-    document.getElementById('choice2').setAttribute('disabled', true);
-    document.getElementById('choice2').innerHTML = 'Hunting';
-     setTimeout(function(){
-        document.getElementById('choice2').innerHTML = oldValue;
-        document.getElementById('choice2').removeAttribute('disabled');
-        document.getElementById('food').innerHTML = final
-        var time = document.getElementById('time').innerHTML
-        time = Number(time)
-        document.getElementById('time').innerHTML = ++time
-        document.getElementById('response').innerHTML = "<samp>You hunted for food and now you have <b>"+final+"</b> pieces of meat.</samp>"
 }
 var gameTime = function() {
       setInterval(function(){
