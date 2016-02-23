@@ -1,6 +1,9 @@
 var start = function(){
   document.getElementById('response').innerHTML ="<samp>" + "<p class='text-muted'>*You walk by a small old town.*<p>*You see a sign: <b>'Welcome to Ridge--'</b> the rest has rusted off*</p></p>" + "</samp>";
     }
+var rak = 0.02
+var armor = 0
+var ran = (Math.floor((Math.random()*10)+1))
 var getCoins = function(){
     var current = document.getElementById('coins').innerHTML
     var add = (Math.floor((Math.random()*10)+1))
@@ -20,6 +23,18 @@ var getCoins = function(){
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
         document.getElementById('response').innerHTML = "<samp>You searched for scrap and now you have <b>"+final+"</b> pieces of scrap.</samp>"
+          if (ran<rak){
+            document.getElementById('response').innerHTML = "<samp>Oh no a zombie attacked. -</samp>"+lost+" health"
+            health = health - lost
+          }
+        ran = (Math.floor((Math.random()*10)+1))
+          if (ran<6) {
+            document.getElementById('response').innerHTML = "<samp>You found an energy bar</samp>"
+            if(health>6){
+              health = 10
+            }
+            health = health+4
+          }
     }, 2000) }
 var cutWood = function(){
     var current = document.getElementById('wood').innerHTML
@@ -39,16 +54,25 @@ var cutWood = function(){
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
         document.getElementById('response').innerHTML = "<samp>You cut wood and now you have <b>"+final+"</b> logs of wood.</samp>"
+          if (ran<rak){
+            document.getElementById('response').innerHTML = "<samp>Oh no a zombie attacked. -</samp>"+lost+" health"
+            health = health - lost
+          }
+        ran = (Math.floor((Math.random()*10)+1))
+          if (ran<6) {
+            document.getElementById('response').innerHTML = "<samp>You found an energy bar</samp>"
+            if(health>6){
+              health = 10
+            }
+            health = health+4
+          }
 }, 2000)
-var rak = 0.02
-var armor = 0
 }
 var gameTime = function() {
       setInterval(function(){
         var time = document.getElementById('time').innerHTML
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
-        var ran = (Math.floor((Math.random()*10)+1))
         var lost = (Math.floor((Math.random()*10)+1)) - armor
           if (ran<rak){
             document.getElementById('response').innerHTML = "<samp>Oh no a zombie attacked. -</samp>"+lost+" health"
