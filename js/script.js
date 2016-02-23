@@ -96,7 +96,7 @@ var getFood = function() {
             document.getElementById('response').innerHTML = "<samp>You found an energy bar</samp>"
             if(health>6){
               health = 10
-            }
+            } 
             health = health+4
 }
 var gameTime = function() {
