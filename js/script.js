@@ -36,6 +36,7 @@ var ohNoes = function(){
          health=health-2
        }
        badChance = badChance + (badChance*time)
+       console.log(badChance)
 }
 var cutWood = function(){
     var current = document.getElementById('wood').innerHTML
