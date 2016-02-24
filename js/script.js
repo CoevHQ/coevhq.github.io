@@ -31,6 +31,7 @@ var getCoins = function(){
        if (random < badChance){
          health=health-2
        }
+       badChance = badChance + parseInt(time/3)
      }, 2000) }
 var cutWood = function(){
     var current = document.getElementById('wood').innerHTML
