@@ -37,7 +37,7 @@ var ohNoes = function(){
        if (random < badChance){
          health=health-2
        }
-       badChance = badChance + (0.02*time)
+       badChance += 0.002*time
        console.log(badChance)
 }
 var cutWood = function(){
