@@ -2,6 +2,8 @@
 var armor = 0
 var health = 10
 var sps=0;var wps=0; var fps=0;
+var badChance = 0.02
+var goodChance = 6
 //GLOBAL VARIABLES - END PLAYER STATS
 var start = function(){
   document.getElementById('response').innerHTML ="<samp>" + "<p class='text-muted'>*You walk by a small old town.*<p>*You see a sign: <b>'Welcome to Ridge--'</b> the rest has rusted off*</p></p>" + "</samp>";
@@ -25,7 +27,11 @@ var getCoins = function(){
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
         document.getElementById('response').innerHTML = "<samp>You searched for scrap and now you have <b>"+final+"</b> pieces of scrap.</samp>"
-    }, 2000) }
+    var random = (Math.floor((Math.random()*10)+1))
+       if (random < badChance){
+         health=health-2
+       }
+     }, 2000) }
 var cutWood = function(){
     var current = document.getElementById('wood').innerHTML
     var add = (Math.floor((Math.random()*10)+1))
