@@ -27,12 +27,16 @@ var getCoins = function(){
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
         document.getElementById('response').innerHTML = "<samp>You searched for scrap and now you have <b>"+final+"</b> pieces of scrap.</samp>"
-    var random = (Math.floor((Math.random()*10)+1))
+     
+       ohNoes()
+     }, 2000) }
+var ohNoes = function(){
+      var random = (Math.floor((Math.random()*10)+1))
        if (random < badChance){
          health=health-2
        }
-       badChance = badChance + parseInt(time/3)
-     }, 2000) }
+       badChance = badChance + (parseInt(time/3)*0.02)
+}
 var cutWood = function(){
     var current = document.getElementById('wood').innerHTML
     var add = (Math.floor((Math.random()*10)+1))
@@ -51,7 +55,9 @@ var cutWood = function(){
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
         document.getElementById('response').innerHTML = "<samp>You cut wood and now you have <b>"+final+"</b> logs of wood.</samp>"
-}, 2000)
+
+       ohNoes()
+     }, 2000)
 }
 var getFood = function() {
   var current = document.getElementById('food').innerHTML
@@ -72,7 +78,9 @@ var getFood = function() {
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
         document.getElementById('response').innerHTML = "<samp>You searched for scrap and now you have <b>"+final+"</b> pieces of scrap.</samp>"
-    }, 2000)
+    
+       ohNoes()
+     }, 2000)
 }
 var gameTime = function() {
       setInterval(function(){
