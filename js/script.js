@@ -31,6 +31,8 @@ var getCoins = function(){
        ohNoes()
      }, 2000) }
 var ohNoes = function(){
+      var time = document.getElementById('time').innerHTML
+      time = Number(time)
       var random = (Math.floor((Math.random()*10)+1))
        if (random < badChance){
          health=health-2
