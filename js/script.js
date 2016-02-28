@@ -97,5 +97,32 @@ var gameTime = function() {
 var healthCheck = function(){
       setInterval(function(){
         document.getElementById('health').innerHTML = health
+        if (health<=0){
+          document.getElementById('health').innerHTML = 0
+          document.getElementById('response').innerHTML = "<samp><strong>You Are Dead</strong></samp>"
+          document.getElementById('choice1').setAttribute('disabled', true);
+          document.getElementById('choice2').setAttribute('disabled', true);
+          document.getElementById('choice3').setAttribute('disabled', true);
+        }
       }, 500)
+}
+var armorUp = function(){
+  armor+=1
+  document.getElementById('response').innerHTML = "<samp>+ 1 Armor = TOTAL of "+armor+" armor</samp>"
+}
+var autoWood = function(){
+  wps+=1
+  setInterval(function(){
+   wood = document.getElementbyId('wood').innerHTML
+   wood = Number(wood)
+   document.getElementById('wood').innerHTML = wood+wps
+  }, 1000)
+}
+var autoScrap = function(){
+  sps+=1
+  setInterval(function(){
+   wood = document.getElementbyId('coins').innerHTML
+   wood = Number(wood)
+   document.getElementById('coins').innerHTML = wood+sps
+  }, 1000)
 }
