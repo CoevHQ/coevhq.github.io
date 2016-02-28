@@ -121,10 +121,7 @@ var armorUp = function(){
   }
 }
 var autoWood = function(){
-  var scrap,old = document.getElementById('coins').innerHTML
-  scrap = Number(scrap)
-  old = Number(old)
-  if(scrap>=50 &&)
+  
   wps+=1
   setInterval(function(){
    wood = document.getElementById('wood').innerHTML
