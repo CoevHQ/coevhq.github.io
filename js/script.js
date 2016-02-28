@@ -37,8 +37,9 @@ var ohNoes = function(){
       var random = (Math.floor((Math.random()*10)+1))
        if (random < badChance){
          health=health-2
+         document.getElementById('response').innerHTML = "<samp>You were attacked by a zombie and you lost 2 health!</samp>"
        }
-       badChance += 0.002*time
+       badChance += 0.003*time
        console.log(badChance)
 }
 var cutWood = function(){
@@ -92,4 +93,9 @@ var gameTime = function() {
         time = Number(time)
         document.getElementById('time').innerHTML = ++time
       }, 20000);
+}
+var healthCheck = function(){
+      setInterval(function(){
+        document.getElementById('health').innerHTML = health
+      }, 500)
 }
