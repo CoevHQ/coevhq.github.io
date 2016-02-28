@@ -113,7 +113,7 @@ var armorUp = function(){
 var autoWood = function(){
   wps+=1
   setInterval(function(){
-   wood = document.getElementbyId('wood').innerHTML
+   wood = document.getElementById('wood').innerHTML
    wood = Number(wood)
    document.getElementById('wood').innerHTML = wood+wps
   }, 1000)
@@ -121,7 +121,7 @@ var autoWood = function(){
 var autoScrap = function(){
   sps+=1
   setInterval(function(){
-   wood = document.getElementbyId('coins').innerHTML
+   wood = document.getElementById('coins').innerHTML
    wood = Number(wood)
    document.getElementById('coins').innerHTML = wood+sps
   }, 1000)
