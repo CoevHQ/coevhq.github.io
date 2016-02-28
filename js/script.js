@@ -7,6 +7,7 @@ var goodChance = 6
 //GLOBAL VARIABLES - END PLAYER STATS
 var start = function(){
   document.getElementById('response').innerHTML ="<samp>" + "<p class='text-muted'>*You walk by a small old town.*<p>*You see a sign: <b>'Welcome to Ridge--'</b> the rest has rusted off*</p></p>" + "</samp>";
+  document.getElementById('health').innerHTML = health;
     }
 var getCoins = function(){
     var current = document.getElementById('coins').innerHTML
