@@ -107,7 +107,7 @@ var healthCheck = function(){
       }, 500)
 }
 var armorUp = function(){
-  scrap,old = document.getElementById('coins').innerHTML
+  var scrap,old = document.getElementById('coins').innerHTML
   scrap = Number(scrap)
   old = Number(old)
   if(scrap>=10){
