@@ -107,10 +107,21 @@ var healthCheck = function(){
       }, 500)
 }
 var armorUp = function(){
+  scrap,old = document.getElementById('coins').innerHTML
+  scrap = Number(scrap)
+  old = Number(old)
+  if(scrap>=10){
   armor+=1
   document.getElementById('response').innerHTML = "<samp>+ 1 Armor = TOTAL of "+armor+" armor</samp>"
+  scrap=scrap-10
+  document.getElementById('coins').innerHTML = old+scrap
+  }
+  else {
+    document.getElementById('response').innerHTML = "Not enough scrap!"
+  }
 }
 var autoWood = function(){
+  
   wps+=1
   setInterval(function(){
    wood = document.getElementById('wood').innerHTML
